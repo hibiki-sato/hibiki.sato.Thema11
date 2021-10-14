@@ -20,8 +20,8 @@ class ViewController: UIViewController {
 
     @IBAction func didPressTodohuken(segue: UIStoryboardSegue) {
         let listVC = segue.source as? ListViewController
-        if let indexPath = listVC?.tableView.indexPathForSelectedRow {
-            inputLabel.text = listVC?.prefectures[indexPath.row]
+        if let selectedPrefectureName = listVC?.selectedPrefectureName {
+            inputLabel.text = selectedPrefectureName
         }
     }
 }
