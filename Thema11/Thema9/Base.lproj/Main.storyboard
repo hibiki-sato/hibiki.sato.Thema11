@@ -79,9 +79,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="LFV-D8-0YF" kind="unwind" unwindAction="didPressTodohukenWithSegue:" id="ztD-ux-UAR"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -96,6 +93,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="LFV-D8-0YF" kind="unwind" identifier="didPressTodohuken" unwindAction="didPressTodohukenWithSegue:" id="11a-wG-R9O"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPQ-Wz-crC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="LFV-D8-0YF" userLabel="Exit" sceneMemberID="exit"/>
